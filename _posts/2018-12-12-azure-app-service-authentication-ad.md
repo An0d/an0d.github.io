@@ -20,21 +20,21 @@ La configuration se passe essentiellement au niveau de l’App Service dans Azur
 Attention, ça va aller très vite :
 
 > * Rendez-vous dans le portail Azure
-
+>
 > * Dans la colonne de gauche, cliquez sur le menu `App Services`
-
+>
 > * Sélectionnez l’App Service que vous souhaitez sécuriser
-
+>
 > * Cliquez sur le menu `Authentication / Authorization` (sous la section `Settings`)
-
+>
 > * Sous `App Service Authentication`, cliquez sur `On`
-
+>
 > * Dans la liste `Action to take when request is not authenticated`, sélectionnez `Log in with Azure Active Directory`
-
+>
 > * Sous `Authentication Providers`, cliquez sur `Azure Active Directory`
-
+>
 > * Dans le nouvel écran qui s’ouvre, sous `Management mode`, sélectionnez `Express` et validez en cliquant sur `OK`
-
+>
 > * N’oubliez surtout pas de sauvegarder la nouvelle configuration en cliquant sur le bouton `Save`
 
 Et voilà, à partir de maintenant, lorsque vous tenterez d’accéder à votre application, vous serez automatiquement redirigé vers une page de login Microsoft. Seuls les utilisateurs enregistrés dans votre Azure Active Directory pourront s’y connecter.
@@ -46,16 +46,16 @@ J’ai eu un peu de mal à trouver comment faire mais cela s’avère très simp
 Une fois que vous avez configuré votre App Service comme expliqué ci-dessus :
 
 > * Retournez dans le menu `Authentication / Authorization` de votre App Service
-
+>
 > * Sous `Authentication Providers`, cliquez sur `Azure Active Directory`
-
+>
 > * Sous `Management mode`, passez de `Express` à `Advanced`
-
+>
 > * Le champ `Issuer Url` représente en fait l’url de l’Azure Active Directory à utiliser
-
+>
 > * Cette url se présente comme ceci `https://sts.windows.net/{directoryId}/`<br />
 > Où `{directoryId}` représente l’identifiant de l’Azure Active Directory à utiliser
-
+>
 > Exemple
 > `https://sts.windows.net/f77bc3b5-2453-423f-a519-7bf232f405fb/`<br /><br />
 > * Dans le champ `Issuer Url`, remplacez simplement la partie `{directoryId}` par l’identifiant de l’Azure Active Directory que vous souhaitez utiliser<br />
