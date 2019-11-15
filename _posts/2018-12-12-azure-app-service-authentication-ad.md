@@ -4,7 +4,7 @@ title:  "Sécuriser une application Azure App Service avec Azure Active Director
 date:   2018-12-12
 author: An0d
 categories: azure
-tags: azure azure-active-directory app-service security authentication
+tags: azure azure-active-directory azure-app-services sécurité authentication
 ---
 La fonctionnalité App Service de Microsoft Azure offre la possibilité de sécuriser rapidement et facilement une application web (Web App, Web API, Function App) simplement avec un peu de configuration dans Azure, et ce, peu importe la technologie qui se cache dans votre application App Service.
 
