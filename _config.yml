@@ -39,6 +39,10 @@ minima:
 
 google_analytics: UA-152620854-1
 
+header_pages:
+  - about.md
+  - links.md
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
