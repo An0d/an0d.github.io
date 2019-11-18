@@ -58,3 +58,5 @@ private void SearchStringEditTextOnEditorAction(object sender, TextView.EditorAc
     }
 }
 ```
+
+*Source : [StackOverflow](https://stackoverflow.com/a/3449616/6936427)*
