@@ -38,6 +38,8 @@ minima:
   date_format: "%d %b %Y"
 
 google_analytics: UA-152620854-1
+disqus:
+    shortname: blog-crush-it-be
 
 header_pages:
   - about.md
