@@ -3,6 +3,7 @@ layout: post
 title:  "Xamarin.Android : Fermer automatiquement le clavier lorsqu'on implémente l'évènement EditorAction"
 date:   2019-11-18
 author: An0d
+permalink: /xamarin-android-close-keyboard-editoraction/
 categories: dev
 tags: .net c# xamarin android
 ---

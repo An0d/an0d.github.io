@@ -3,6 +3,7 @@ layout: post
 title:  "Introduction à Refit : la bibliothèque qui vous facilite le REST"
 date:   2019-11-21
 author: An0d
+permalink: /refit-introduction/
 categories: dev
 tags: .net c# nuget refit
 ---

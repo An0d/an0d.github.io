@@ -3,6 +3,7 @@ layout: post
 title:  "Sécuriser une application Azure App Service avec Azure Active Directory"
 date:   2018-12-12
 author: An0d
+permalink: /azure-app-service-authentication-ad/
 categories: azure
 tags: azure azure-active-directory azure-app-services sécurité authentication
 ---
