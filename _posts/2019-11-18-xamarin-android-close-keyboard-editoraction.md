@@ -4,7 +4,7 @@ title:  "Xamarin.Android : Fermer automatiquement le clavier lorsqu'on implémen
 date:   2019-11-18
 author: An0d
 categories: dev
-tags: xamarin android .net c#
+tags: .net c# xamarin android
 ---
 Android permet de remplacer la touche `Enter` du clavier par une action spécifique grâce à l'attribut `android:imeOptions` (moyennant l'attribut `android:singleLine="true"`) qu'on peut placer sur un `EditText`, par exemple.
 
