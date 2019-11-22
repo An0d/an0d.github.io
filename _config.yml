@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Crush-IT!
+title: Le blog d'An0d
 author: Grégory Viaene
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   .NET, .NET Core, C#, Xamarin, MvvmCross, Angular
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.crush-it.be" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.an0d.be" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  An0d
 linkedin_username: An0d
 
@@ -40,7 +40,7 @@ minima:
 
 google_analytics: UA-152620854-1
 disqus:
-    shortname: blog-crush-it-be
+    shortname: an0d
 
 header_pages:
   - about.md
