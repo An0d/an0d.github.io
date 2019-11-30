@@ -27,6 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.an0d.be" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  An0d
 linkedin_username: An0d
+rss: Flux RSS
 
 # Build settings
 theme: minima
@@ -44,6 +45,7 @@ disqus:
 
 header_pages:
   - about.md
+  - tools.md
   - links.md
 
 # Exclude from processing.
