@@ -46,7 +46,7 @@ Via **NuGet Package Manager**
 
 ## Utilisation
 
-# URL dynamique
+### URL dynamique
 
 Passer un paramètre dans l'URL
 ```cs
@@ -67,7 +67,7 @@ GroupList(4);
 >>> "/group/4/users"
 ```
 
-# Paramètres de requête
+### Paramètres de requête
 
 ***Tous les paramètres passés à la méthode qui ne sont pas repris dans l'URL sont automatiquement utilisés en tant que paramètres de requête***
 ```cs
@@ -93,7 +93,7 @@ Search(new [] {10, 20, 30})
 >>> "/users/list?age=10&age=20&age=30"
 ```
 
-# Corps de la requête
+### Corps de la requête
 
 L'un des paramètres de la méthode peut être utilisé comme corps de la requête si on le marque avec l'attribut `[Body]`
 ```cs
@@ -107,7 +107,7 @@ Si le corps de la requête est simplement une chaîne de caractère on peut pré
 Task AddComment([AliasAs("id")]int postId, [Body(BodySerializationMethod.Serialized)]string comment);
 ```
 
-# En-têtes
+### En-têtes
 Pour définir un header statique au niveau d'une requête, on doit marquer la méthode avec l'attribut `[Headers]`
 ```cs
 [Headers("User-Agent: Crush-IT App")]
@@ -150,13 +150,13 @@ Dans un prochain article, j'expliquerai comment configurer *Refit* pour appeler 
 
 ## Info
 
-# Site officiel
+### Site officiel
 [https://reactiveui.github.io/refit/](https://reactiveui.github.io/refit/)
 
-# Repository GitHub
+### Repository GitHub
 *Je trouve que la doc y est plus à jour que sur le site officiel*
 
 [https://github.com/reactiveui/refit](https://github.com/reactiveui/refit)
 
-# Package NuGet
+### Package NuGet
 [https://www.nuget.org/packages/Refit/](https://www.nuget.org/packages/Refit/)
