@@ -17,20 +17,22 @@ J'ai appris à mes dépens qu'il vallait mieux éviter les caractères spéciaux
 
 En effet, quand j'ai voulu configurer la signature automatique des APKs, dans Azure DevOps, j'ai rencontré l'erreur suivante :
 
-    java.io.IOException: Keystore was tampered with, or password was incorrect
-            at sun.security.provider.JavaKeyStore.engineLoad(Unknown Source)
-            at sun.security.provider.JavaKeyStore$JKS.engineLoad(Unknown Source)
-            at sun.security.provider.KeyStoreDelegator.engineLoad(Unknown Source)
-            at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(Unknown Source)
-            at java.security.KeyStore.load(Unknown Source)
-            at com.android.apksigner.ApkSignerTool$SignerParams.loadKeyStoreFromFile(ApkSignerTool.java:829)
-            at com.android.apksigner.ApkSignerTool$SignerParams.loadPrivateKeyAndCertsFromKeyStore(ApkSignerTool.java:719)
-            at com.android.apksigner.ApkSignerTool$SignerParams.loadPrivateKeyAndCerts(ApkSignerTool.java:659)
-            at com.android.apksigner.ApkSignerTool$SignerParams.access$500(ApkSignerTool.java:611)
-            at com.android.apksigner.ApkSignerTool.sign(ApkSignerTool.java:266)
-            at com.android.apksigner.ApkSignerTool.main(ApkSignerTool.java:89)
-    Caused by: java.security.UnrecoverableKeyException: Password verification failed
-            ... 11 more
+```
+java.io.IOException: Keystore was tampered with, or password was incorrect
+        at sun.security.provider.JavaKeyStore.engineLoad(Unknown Source)
+        at sun.security.provider.JavaKeyStore$JKS.engineLoad(Unknown Source)
+        at sun.security.provider.KeyStoreDelegator.engineLoad(Unknown Source)
+        at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(Unknown Source)
+        at java.security.KeyStore.load(Unknown Source)
+        at com.android.apksigner.ApkSignerTool$SignerParams.loadKeyStoreFromFile(ApkSignerTool.java:829)
+        at com.android.apksigner.ApkSignerTool$SignerParams.loadPrivateKeyAndCertsFromKeyStore(ApkSignerTool.java:719)
+        at com.android.apksigner.ApkSignerTool$SignerParams.loadPrivateKeyAndCerts(ApkSignerTool.java:659)
+        at com.android.apksigner.ApkSignerTool$SignerParams.access$500(ApkSignerTool.java:611)
+        at com.android.apksigner.ApkSignerTool.sign(ApkSignerTool.java:266)
+        at com.android.apksigner.ApkSignerTool.main(ApkSignerTool.java:89)
+Caused by: java.security.UnrecoverableKeyException: Password verification failed
+        ... 11 more
+```
 
 Message d'erreur on ne peut plus clair...
 
