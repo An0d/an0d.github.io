@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Visual Studio et  les caractères spéciaux  dans le mot de passe de l'Android Keystore"
+title:  "Visual Studio et les caractères spéciaux dans le mot de passe de l'Android Keystore"
 date:   2019-12-08
 author: An0d
 permalink: /vs-android-keystore-password-special-characters/
